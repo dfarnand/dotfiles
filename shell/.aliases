@@ -14,11 +14,8 @@
 
 alias textedit="open -a TextEdit"
 alias youboat="newsboat -u $HOME/.newsboat/youtubeurls -c $HOME/.newsboat/youcache.db -C $HOME/.newsboat/youboat.config"
-#alias ddg="BROWSER=w3m ddgr"
 alias ddg="ddgr --url-handler=w3m"
 alias wiki="BROWSER=w3m ddgr \!wiki"
-
-alias hltb="node ~/Scripts/hltb.js"
 
 ## Internet Radio
 alias wnyc="mpv --no-video http://www.wnyc.org/stream/wnyc-fm939/aac.pls"
@@ -30,18 +27,12 @@ alias celtic="mpv --no-video https://streams.audio.wgbh.org:8200/celtic-sojourn.
 ## Star Trek Noise
 alias engage="play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +20"
 
-## Backup Command
-alias backup_all="rsync -av --delete ~/Documents /Volumes/dfarnand/HomeBackup/ && rsync -av ~/.spacemacs /Volumes/dfarnand/HomeBackup && rsync -avL ~/.zshrc /Volumes/dfarnand/HomeBackup"
-
 ## Youtube video sizes
 alias ytmed="mpv --ytdl-format=22 $1"
 alias ytsmall='mpv --ytdl-format=18 $1'
 
 ## Network monitor
 alias hnet="nload devices en8 en0"
-
-## Sync KeePass Database
-#alias kpsync="python $HOME/Scripts/rclonesync-V2/rclonesync.py $HOME/KeePass GDrive:/Security"
 
 ## Radian instead of old R
 alias rr="radian"
