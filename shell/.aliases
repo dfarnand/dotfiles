@@ -28,7 +28,8 @@ alias celtic="mpv --no-video https://streams.audio.wgbh.org:8200/celtic-sojourn.
 alias engage="play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +20"
 
 ## Youtube video sizes
-alias ytmed="mpv --ytdl-format=22 $1"
+#alias ytmed="mpv --ytdl-format=22 $1"
+alias ytmed='mpv --ytdl-format="bestvideo[ext=mp4][height<=?768]+bestaudio[ext=m4a]"'
 alias ytsmall='mpv --ytdl-format=18 $1'
 
 ## Network monitor
@@ -36,3 +37,6 @@ alias hnet="nload devices en8 en0"
 
 ## Radian instead of old R
 alias rr="radian"
+
+## Reliably connect to PS3
+alias ps3_ftp='lftp 192.168.1.149 -e "set net:connection-limit 1; set ftp:passive-mode off;"'
