@@ -30,6 +30,8 @@ font pango:monospace 9
 floating_modifier $mod
 
 # start a terminal
+# Note: I had to run `sudo update-alternatives --config x-terminal-emulator`
+#       to get i3-sensible-terminal to actually work!
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
