@@ -171,8 +171,33 @@ bindsym $mod+backslash exec caja
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+# bar {
+#         status_command i3status
+#   colors {
+#     separator #586e75
+#     background #002b36
+#     statusline #aea79f
+#     focused_workspace #586e75 #586e75 #ffffff #222222
+#     active_workspace #073642 #073642 #ffffff #bbbbbb
+#     inactive_workspace #002b36 #002b36 #aea79f #bbbbbb
+#     urgent_workspace #77216f #77216f #ffffff #ffffff
+#   }
+# }
+
 bar {
-        status_command i3status
+    status_command    python3 ~/.config/i3/i3pystatus.conf
+    position          bottom
+    workspace_buttons yes
+    font pango:Ubuntu Mono, FontAwesome 10
+    # colors {
+    #     background #253941
+    #     statusline #e7dfd9
+    #     separator  #081419
+    #     focused_workspace  #2aa198 #073642 #eee895
+    #     active_workspace   #073642 #859900 #839496
+    #     inactive_workspace #002b36  #002b36   #586e75
+    #     urgent_workspace   #cb4b16 #dc322f #fdf6e3
+    # }
   colors {
     separator #586e75
     background #002b36
@@ -182,7 +207,7 @@ bar {
     inactive_workspace #002b36 #002b36 #aea79f #bbbbbb
     urgent_workspace #77216f #77216f #ffffff #ffffff
   }
-}
+  }
 
 # Startup Commands
 exec --no-startup-id mate-settings-daemon
@@ -194,7 +219,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id dropbox start
 exec --no-startup-id insync start
 exec --no-startup-id nitrogen --restore
-
+exec --no-startup-id caffeine-indicator
 
 
 # i3Style settings

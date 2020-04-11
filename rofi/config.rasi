@@ -17,10 +17,13 @@ configuration {
   terminal: "i3-sensible-terminal";
   run-shell-command: "{terminal} -e '{cmd}'";
   run-command: "/bin/bash -i -c '{cmd}'";
-  run-list-command: "source $HOME/.aliases";
+  /*run-shell-command: "'{terminal}' -e zsh -c '{cmd}'";*/
+  /*run-command: "/bin/zsh -c '{cmd}'";*/
+  /*run-list-command: "source $HOME/.aliases";*/
+  run-list-command: ". ~/.aliases";
   show-icons: true;
-  matching: "fuzzy";
-  levenshtein-sort: true;
+  /*matching: "fuzzy";*/
+  /*levenshtein-sort: true;*/
   sidebar-mode: true;
 	display-drun:   "Activate";
 	display-run:    "Execute";
