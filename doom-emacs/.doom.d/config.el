@@ -57,3 +57,6 @@
 
 ;; Visual line mode for text always!
 (add-hook 'text-mode-hook #'visual-line-mode)
+
+;; Not auto fill mode!
+(remove-hook 'text-mode-hook #'auto-fill-mode)
