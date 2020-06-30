@@ -297,6 +297,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id dropbox start
 exec --no-startup-id insync start
 exec --no-startup-id caffeine
+exec --no-startup-id xgamma -gamma 1.3
 
 # Add natural scrolling
 exec --no-startup-id xinput --set-prop 12 "libinput Natural Scrolling Enabled" 1
