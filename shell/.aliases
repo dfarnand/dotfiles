@@ -29,6 +29,7 @@ alias engage="play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +
 
 ## Youtube video sizes
 #alias ytmed="mpv --ytdl-format=22 $1"
+alias ytlarge='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio"'
 alias ytmed='mpv --ytdl-format="bestvideo[ext=mp4][height<=?768]+bestaudio[ext=m4a]"'
 alias ytsmall='mpv --ytdl-format=18 $1'
 
@@ -40,3 +41,6 @@ alias rr="radian"
 
 ## Reliably connect to PS3
 alias ps3_ftp='lftp 192.168.1.149 -e "set net:connection-limit 1; set ftp:passive-mode off;"'
+
+## Attempt at wine prefix tool
+alias wp="WINEPREFIX=$PWD/.wine_prefix/"
