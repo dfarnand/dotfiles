@@ -43,4 +43,8 @@ alias rr="radian"
 alias ps3_ftp='lftp 192.168.1.149 -e "set net:connection-limit 1; set ftp:passive-mode off;"'
 
 ## Attempt at wine prefix tool
-alias wp="WINEPREFIX=$PWD/.wine_prefix/"
+# alias wp="WINEPREFIX=$PWD/.wine_prefix/"
+
+## Festival TTS
+tts_en() { echo "$@" | festival --tts --language "american_english" ;}
+tts_es() { echo "$@" | festival --tts --language "castillian_spanish" ;}
