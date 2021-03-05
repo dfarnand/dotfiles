@@ -60,3 +60,5 @@
 
 ;; Not auto fill mode!
 (remove-hook 'text-mode-hook #'auto-fill-mode)
+
+(wakib-keys 1)

@@ -21,6 +21,7 @@
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
+(package! wakib-keys)
 (package! git-auto-commit-mode)
 (package! poly-R)
 
